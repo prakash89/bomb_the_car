@@ -69,7 +69,7 @@ class GameWindow < Gosu::Window
   def draw
    calcute_car_position
    unless @loose
-    incrementing_bullet_position
+    incrementing_bullet_y_position
     increment_point_for_miss_bullet
     bullets = [[@bullet1_x, @bullet1_y], [@bullet2_x, @bullet2_y],[@bullet3_x, @bullet3_y],[@bullet4_x, @bullet4_y],[@bullet5_x, @bullet5_y],[@bullet6_x, @bullet6_y]]
     bullets.each do |bullet|
